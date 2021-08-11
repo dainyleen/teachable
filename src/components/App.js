@@ -5,6 +5,7 @@ import Header from './Header';
 import Home from './Home';
 import About from './About';
 import Teachers from './Teachers';
+import Featured from './Featured';
 import Courses from './Courses';
 import NotFound from './NotFound';
 
@@ -15,7 +16,8 @@ const App = () => (
       <Switch>
         <Route exact path='/' component={Home} />
         <Route path='/about' component={About} />
-        <Route path='/teachers' component={Teachers} />
+        <Route exact path='/teachers' component={Teachers} />
+        <Route path='/teachers' component={Featured} />
         <Route path='/courses' component={Courses} />
         <Route component={NotFound} />
       </Switch>
