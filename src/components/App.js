@@ -6,6 +6,7 @@ import Home from './Home';
 import About from './About';
 import Teachers from './Teachers';
 import Courses from './Courses';
+import NotFound from './NotFound';
 
 const App = () => (
   <BrowserRouter>
@@ -15,6 +16,7 @@ const App = () => (
       <Route path='/about' component={About} />
       <Route path='/teachers' component={Teachers} />
       <Route path='/courses' component={Courses} />
+      <Route component={NotFound} />
     </div>
   </BrowserRouter>
 );
